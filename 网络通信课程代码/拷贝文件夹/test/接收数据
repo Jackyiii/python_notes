@@ -1,0 +1,8 @@
+接收数据
+创建套接字
+udp_Socket=socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
+localaddr=("",7890)
+使用套接字
+udp_socket.sendto("xxxx".endcode("utf-8"),("192.168.1.1"))
+udp_socket.recvfrom(1024)
+udp_socket.close()

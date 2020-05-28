@@ -1,0 +1,47 @@
+判断
+isspace-是否只包含空格
+isalnum是否所有字符都是字母或者数字
+isalpha 是否每个字符都是字母
+isdecimal是否只包含数字
+isdigit 是否只包含全角数字
+isnumeric是否全角数字和汉字数字
+istitle每个单词首字母是否大写
+islower是否是小写
+isupper是否是大写
+
+查找
+startwith（str）检查字符串是否以str开头
+endwith（str）检查字符串是否以str结尾
+find（str，start=0，end=len（string））在start和end指定的范围检查是否有某一个字符串
+rfind从右边开始查找
+index（str，start=0，end=len（string））类似只不过不在会报错
+rindex从右边开始
+replace（oldstr，newstr，num=string。count（old））old替换成new，如果num指定
+则替换不超过num次
+
+大小写转换
+capitalize（）把字符串的一个字符大写
+title（）把每个单词首字母大写
+lower（）字符串变成小写
+upper（）字符串中变成大写
+swapcase（）翻转
+
+文本对齐
+ljust（width）返回一个原字符串左对齐，并使用空格天长至长度width的新字符串
+rjust（width）右对齐
+center（width）居中
+
+去除空白字符串
+lstrip（）截掉string左边（开始）的空白字符串
+rstrip（）右边
+strip（）两边
+
+拆分和连接
+partition（str）分成3元素的元祖
+rpartition（str）右边开始查找
+split（str="，num"）以str为分隔符切片string 如果num则仅分割num+1个自字符串str默认包含、r't'n和空格
+splitlines按照'r n rn分割返回一个包含各行为元素的列表
+join（seq）将seq中所有的元素合并为一个新的字符串
+
+
+

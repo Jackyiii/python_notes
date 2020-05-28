@@ -1,0 +1,28 @@
+mkvirtualenv -p python3 bj_py
+进入虚拟环境工作 workon 虚拟环境名称
+查看机器有多少个虚拟环境
+workon 空格 + 两个tab
+退出虚拟环境
+deactivate
+rmvirtualenv删除虚拟环境
+pip install django==1.8.2
+pip list
+
+pip freeze
+ls 查看目录
+cd ..返回上一级目录
+tree查看目录结构
+
+使用manage.py startapp blog创建init admin migrations models test view结构
+建立应用和项目之间的联系 需要对应用进行注册
+
+__init__.py说明test1是一个python包
+setting.py 项目的配置文件
+urls.py 访问的地址url路由的配置
+wsgi.py web服务器和django交互的入口
+manage.py项目的管理文件管理Django的项目
+
+一个模块用一个应用实现
+创建应用
+python manage.py startapp 应用名
+

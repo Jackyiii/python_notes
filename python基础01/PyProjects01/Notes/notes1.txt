@@ -1,0 +1,6 @@
+自带的built in package
+moudle最小模块
+testing builtin packgage
+通过pip安装requests包，导入
+导入会默认导入到2.7包中，解决方案是使用
+pip3 install requests

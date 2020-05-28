@@ -1,0 +1,11 @@
+num="0123456789"
+#num=num[2:6]
+#num=num[2:]
+#num=num[0:6]
+#num[:]
+#num=num[::2]
+#num=num[1::2]
+#num=num[2:-1]
+#num=num[-2:]
+num=num[::-1]
+print(num)

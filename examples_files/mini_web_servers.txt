@@ -1,0 +1,1 @@
+You're working on a Mac so paths like "a/b/c.text" are fine, but if you use Windows in the future, you'll have to change all the '/' to '\'. If you want to be more portable and platform-agnostic from the beginning, you better use the os.path.join operator:
