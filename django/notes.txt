@@ -12,7 +12,7 @@ pip freeze
 ls 查看目录
 cd ..返回上一级目录
 tree查看目录结构
-
+django-admin startproject django_notes_01
 使用manage.py startapp blog创建init admin migrations models test view结构
 建立应用和项目之间的联系 需要对应用进行注册
 
@@ -26,3 +26,18 @@ manage.py项目的管理文件管理Django的项目
 创建应用
 python manage.py startapp 应用名
 
+
+Models.py数据库相关的内容
+Views.py接受请求，处理，与mt进行交互，处理请求一个请求对应一个处理函数
+Test.py写测试代码的文件
+admin.py网站后台管理
+建立应用和项目之间的联系，需要对应应用注册
+setting.py Installend_App 进行注册
+
+python3 manage.py runserver如果显示端口被占用 那么 使用slof -i:8000查看端口号 kill -9 id号杀掉id
+拷贝网站
+
+
+ORM object对象和类 relation关系数据表 mapping映射
+Models.py设计和表对应的类模型类
+ORM框架
