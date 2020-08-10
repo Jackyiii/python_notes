@@ -24,6 +24,7 @@ manage.py项目的管理文件管理Django的项目
 
 一个模块用一个应用实现
 创建应用
+
 python manage.py startapp 应用名
 
 
@@ -41,3 +42,40 @@ python3 manage.py runserver如果显示端口被占用 那么 使用slof -i:8000
 ORM object对象和类 relation关系数据表 mapping映射
 Models.py设计和表对应的类模型类
 ORM框架
+model.py 写入类， 生成迁移文件python3 manage.py makemigrations 执行迁移生成表python3 manage.py migrate
+
+
+From moduel_01.models import BookInfo
+b=BookInfo()
+b.btitle="123"
+From date time import date
+b.bpub_date=date(1990,1,1)
+b.save()
+b2=BookInfo.objects.get(id=1)
+b2.btitle
+b2.bpub_date=(1001,1,1)
+b2.save()
+b2.delete()
+>>> from moduel_01.models import BookInfo,HeroInfo
+>>> b=BookInfo()
+>>> b.bititle="hah"
+>>> from datetime import date
+>>> b.bpub_date=date(1990,1,1)
+>>> b.save
+<bound method Model.save of <BookInfo: BookInfo object (None)>>
+>>> b.save()
+>>> h=HeroInfo()
+>>> h.hname="duanyu"
+>>> h.hgender="False"
+>>> h.hgende=False
+>>> h.hcomment="liumaishenqian"
+>>> h.hbook=b
+>>> h.save()
+
+b.heroinfo_set.all()
+后台管理，
+本地化时区和语言
+修改setting。py
+创建管理员
+python3 manage.py createsuperuser
+ 
